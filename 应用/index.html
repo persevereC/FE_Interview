@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>应用 Interview</title>
+</head>
+<body>
+  <div id='app'>
+    <h2>应用 复习概要</h2>
+    <ol>
+      <li v-for='item in menu'><a :href='item.url'>{{item.name}}</a></li>
+    </ol>
+    <hr/>
+    <div id='animate'>
+      sda
+    </div>
+  </div>
+  <script src="../vue.js"></script>
+  <script>
+      new Vue({
+        el: '#app',
+        data(){
+          return {
+            menu: [
+              {name: '预加载、懒加载', url: '#animate'},
+              {name: '算法（快排， 双链表）', url: ''},
+              {name: '柯里化', url: ''},
+              {name: 'js设计模式', url: ''},
+              {name: '前端SEO、性能优化', url: ''},
+              {name: 'web开发中会话跟踪的方法', url: ''},
+              {name: '渐进增强 优雅降级', url: ''},
+              {name: 'mvc mvp mvvm', url: ''},
+            ]
+          }
+        }
+      })
+  </script>
+</body>
+</html>

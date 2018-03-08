@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Interview</title>
+</head>
+<body>
+  <div id='app'>
+    <h2>JS复习概要</h2>
+    <ol>
+      <li v-for='item in menu'><a :href='item.url'>{{item.name}}</a></li>
+    </ol>
+    <hr/>
+    <div id='animate'>
+      sda
+    </div>
+  </div>
+  <script src="../vue.js"></script>
+  <script>
+      new Vue({
+        el: '#app',
+        data(){
+          return {
+            menu: [
+              {name: '数据类型（null undefined区别）', url: '#animate'},
+              {name: 'this，闭包，上下文', url: ''},
+              {name: 'cookie session localStorage sessionStorage', url: ''},
+              {name: '继承，原型链', url: ''},
+              {name: 'Promise', url: ''},
+              {name: '事件循环', url: ''},
+              {name: '函数节流 & 函数防抖', url: ''},
+              {name: '事件模型,编写一个EventUtil工具类实现事件管理兼容', url: ''},
+              {name: 'js内存泄露，机制，如何手动释放', url: ''},
+              {name: 'airbnb规范', url: ''},
+              {name: 'DOM元素e的e.getAttribute(propName)和e.propName有什么区别和联系', url: ''},
+              {name: 'offsetWidth/offsetHeight,clientWidth/clientHeight与scrollWidth/scrollHeight的区别', url: ''},
+              {name: 'XMLRequestHttp', url: ''},
+              {name: 'focus/blur,focusin/focusout,mouseover/mouseout,mouseenter/mouseleave', url: ''},
+              {name: '=== toString valueOf', url: ''},
+            ]
+          }
+        }
+      })
+  </script>
+</body>
+</html>

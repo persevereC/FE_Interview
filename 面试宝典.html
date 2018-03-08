@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>面试题收集</title>
+</head>
+<body>
+  <div id='app'>
+    <h2>面试题收集</h2>
+    <ol>
+      <li v-for='item in menu'><a :href='item'>{{item}}</a></li>
+    </ol>
+  </div>
+  <script src="./vue.js"></script>
+  <script>
+      new Vue({
+        el: '#app',
+        data(){
+          return {
+            menu: [
+              'https://juejin.im/post/591afe90128fe1005ce339f7',
+              'https://juejin.im/post/5a998991f265da237f1dbdf9',
+              'https://news.cnblogs.com/n/590989/',
+              'https://github.com/qiu-deqing/FE-interview',
+              'https://juejin.im/post/59c907d46fb9a00a4746e2db',
+            ]
+          }
+        }
+      })
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Css Interview</title>
+</head>
+<body>
+  <div id='app'>
+    <h2>CSS复习概要</h2>
+    <ol>
+      <li v-for='item in menu'><a :href='item.url'>{{item.name}}</a></li>
+    </ol>
+    <hr/>
+    <div id='animate'>
+      sda
+    </div>
+  </div>
+  <script src="../vue.js"></script>
+  <script>
+      new Vue({
+        el: '#app',
+        data(){
+          return {
+            menu: [
+              {name: '动画（transition，transform，animation）', url: '#animate'},
+              {name: '布局（flex，grid）', url: ''},
+              {name: '清除浮动', url: ''},
+              {name: '盒子模型（box-sizing）', url: ''},
+              {name: '水平垂直居中', url: ''},
+              {name: 'BFC', url: ''},
+              {name: '命名方式BEM', url: ''},
+              {name: 'CSS有哪些继承属性', url: ''},
+              {name: 'CSS选择器', url: ''},
+              {name: 'CSS sprite', url: ''},
+              {name: 'specified value,computed value,used value', url: ''},
+              {name: 'link和@import区别', url: ''},
+              {name: '块级元素和行内元素区别', url: ''},
+              {name: '什么是FOUC?如何避免', url: ''},
+              {name: '重排重绘，哪些操作会引起', url: ''},
+            ]
+          }
+        }
+      })
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>前端框架相关 Interview</title>
+</head>
+<body>
+  <div id='app'>
+    <h2>前端框架相关 复习概要</h2>
+    <ol>
+      <li v-for='item in menu'><a :href='item.url'>{{item.name}}</a></li>
+    </ol>
+    <hr/>
+    <div id='animate'>
+      sda
+    </div>
+  </div>
+  <script src="../vue.js"></script>
+  <script>
+      new Vue({
+        el: '#app',
+        data(){
+          return {
+            menu: [
+              {name: 'react VS vue', url: '#animate'},
+              {name: 'gulp VS webpack', url: ''},
+              {name: 'amd cmd commonjs es6模块', url: ''},
+              {name: '三大框架比较', url: ''},
+              {name: 'vue中VNode的理解，diff算法， mvvm', url: ''},
+              {name: 'vue中on emit off once实现'}
+            ]
+          }
+        }
+      })
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTTP Interview</title>
+</head>
+<body>
+  <div id='app'>
+    <h2>HTTP复习概要</h2>
+    <ol>
+      <li v-for='item in menu'><a :href='item.url'>{{item.name}}</a></li>
+    </ol>
+    <hr/>
+    <div id='animate'>
+      sda
+    </div>
+  </div>
+  <script src="../vue.js"></script>
+  <script>
+      new Vue({
+        el: '#app',
+        data(){
+          return {
+            menu: [
+              {name: 'http、https(加密算法)、http1、http2、状态码、request头，response头', url: '#animate'},
+              {name: '跨域', url: ''},
+              {name: 'xss crsf', url: ''},
+              {name: '浏览器缓存机制', url: ''},
+              {name: 'get post put', url: ''},
+              {name: '浏览器输入url到页面显示', url: ''},
+              {name: '', url: ''},
+              {name: 'CSS有哪些继承属性', url: ''},
+              {name: 'CSS选择器', url: ''},
+              {name: 'CSS sprite', url: ''},
+              {name: 'specified value,computed value,used value', url: ''},
+              {name: 'link和@import区别', url: ''},
+              {name: '块级元素和行内元素区别', url: ''},
+              {name: '什么是FOUC?如何避免', url: ''},
+            ]
+          }
+        }
+      })
+  </script>
+</body>
+</html>
